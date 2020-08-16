@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="https://kit.fontawesome.com/4e88e44de3.js" crossorigin="anonymous"></script>
+	<title>Retrogaming Media</title>
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<div class="logo-header">
+				<h1 class="logo">Retrogaming</h1>
+				<h3 class="logo-subtext">Retro is hot!</h3>
+			</div>
+			<div class="navbar">
+				<nav>
+					<ul class="main-nav">
+						<li class="nav-item">
+							<a class="nav-link nav-hover-animation" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-hover-animation" href="media.html">Media</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-current-page" href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<div class="main-wrapper">
+				<form name="contactformulier" method="POST" data-netlify="true">
+					<label for="naam">Naam <span class="veld-verplicht">*</span></label>
+					<input type="text" name="naam" id="naam">
+
+					<label for="voorletter">Voorletter(s) <span class="veld-verplicht">*</span></label>
+					<input type="text" name="voorletter" id="voorletter">
+
+					<label for="geboortedatum">Geboortedatum</label>
+					<input type="date" name="geboortedatum" id="geboortedatum">
+
+					<label for="email">Email <span class="veld-verplicht">*</span></label>
+					<input type="email" name="email" id="email">
+
+					<label for="onderwerp">Onderwerp </label>
+					<select id="onderwerp" name="onderwerp">
+						<option value="games">Games</option>
+						<option value="media">Media</option>
+						<option value="overige">Overige</option>
+					</select>
+
+					<label for="bericht">Uw bericht</label>
+					<textarea id="bericht" name="bericht" rows="10"> </textarea>
+
+					<button>Verzenden</button>
+				</form>
+			</div>
+		</main>
+		<div class="footer">
+			<footer>
+				<p>
+					Retrogaming <a href="#"> <i class="fab fa-facebook-square"></i></a>
+					<a href="#"> <i class="fab fa-whatsapp-square"></i></a>
+				</p>
+			</footer>
+		</div>
+	</div>
+</body>
+
+</html>
